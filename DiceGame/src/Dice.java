@@ -17,7 +17,7 @@ public class Dice {
 		int dice = 0;
 		// i can be from 1 to 4
 		switch (i) {
-		case 1:
+		case 1:									//dung inteface  de tao ra 4 con xuc xac
 			if (1 <= dot && dot <= 5)
 				dice = 1;
 			else if (6 <= dot && dot <= 9)

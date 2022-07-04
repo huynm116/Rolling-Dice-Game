@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Action {
+public class Referee {
 	public int playerInit() {
 		int numberOfPlayers = 0;
 		System.out.println("Enter the number of real player(s): ");

@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Start {
 
 	public static void main(String[] args) {
-		Action action = new Action();
-		int numberOfPlayers = action.playerInit();
+		Referee ref = new Referee();
+		int numberOfPlayers = ref.playerInit();
 		int numberOfComs = 4 - numberOfPlayers;
 		int totalPoints = 0;
 		int turn = 0; // luot choi
@@ -41,13 +41,13 @@ public class Start {
 		while (totalPoints != 21) {
 			turn++;
 			if (turn % 4 == 1) {
-				totalPoints = action.play(1, numberOfPlayers, numberOfComs, players, computer, totalPoints);
+				totalPoints = ref.play(1, numberOfPlayers, numberOfComs, players, computer, totalPoints);
 			} else if (turn % 4 == 2) {
-				totalPoints = action.play(2, numberOfPlayers, numberOfComs, players, computer, totalPoints);
+				totalPoints = ref.play(2, numberOfPlayers, numberOfComs, players, computer, totalPoints);
 			} else if (turn % 4 == 3) {
-				totalPoints = action.play(3, numberOfPlayers, numberOfComs, players, computer, totalPoints);
+				totalPoints = ref.play(3, numberOfPlayers, numberOfComs, players, computer, totalPoints);
 			} else {
-				totalPoints = action.play(4, numberOfPlayers, numberOfComs, players, computer, totalPoints);
+				totalPoints = ref.play(4, numberOfPlayers, numberOfComs, players, computer, totalPoints);
 			}
 		}
 	}

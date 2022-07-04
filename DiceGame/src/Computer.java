@@ -2,7 +2,7 @@
 public class Computer extends Players {
 
 	public void expression(int i) {
-		switch (i) {
+		switch (i) {    //dung computer la abstract class 
 		case 1:
 			System.out.println("Oh no! I lost!");
 			break;
